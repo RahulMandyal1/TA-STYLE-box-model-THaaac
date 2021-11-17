@@ -1,0 +1,90 @@
+<!---
+### Create a page according to the layout shown below
+
+![Box Model Exercise 6](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/box-model/ex-6.png)
+
+#### Problems for exercise 2 in the layout
+
+- Each parent container has width of 600px and border of 1px;
+- Each children box has width 180px and height 100px as well as margin of 10px;
+- Each child box which is having border has border-width 1px.
+- Note in the first container the boxes do not have any border.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model asssignment 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>The Box Model , Box sizing & Box-<br>shadow</p>
+    </header>
+
+    <main>
+         <hr>
+         <p class="heading">Exercise 1</p>
+        
+       <section>
+          <div class="wrapper">
+             <div class="innerdiv">
+                 <div class="maindiv"></div>
+             </div>
+         </div>
+
+         <div class="marker-container">
+            <div class="marker">
+              <span class="circle content"></span>
+              <span>content</span>
+            </div>
+            <div class="marker">
+              <span class="circle padding"></span>
+              <span>padding</span>
+            </div>
+            <div class="marker">
+              <span class="circle border"></span>
+              <span>#border</span>
+            </div>
+            <div class="marker">
+              <span class="circle margin"></span>
+              <span>#margin</span>
+            </div>
+          </div>
+  </section>
+  <section>
+    <hr>
+    <p class="heading">Exercise 2</p>
+    <p>no border on these boxes</p>
+    <div class="container">
+        <div class="child-box">box</div>
+        <div class="child-box">box</div>
+        <div class="child-box">box</div>
+      </div>
+      <hr>
+      <p>1 px border on these boxes</p>
+      <div class="container">
+        <div class="child-box border border-box">box</div>
+        <div class="child-box border border-box">box</div>
+        <div class="child-box border border-box block">box</div>
+      </div>
+      
+      <hr>
+      <p>1 px border on these boxes but they are in same line</p>
+      <div class="container">
+        <div class="child-box border border-box">box</div>
+        <div class="child-box border border-box">box</div>
+        <div class="child-box border border-box ">box</div>
+      </div>
+   
+   
+ </section>
+    </main>
+</body>
+</html>
